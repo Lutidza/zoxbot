@@ -17,8 +17,8 @@ export class ProductsController {
     }
 
     @Post()
-    @HttpCode(HttpStatus.CREATED)
-    @Header('Cache-control', 'none')
+    // @HttpCode(HttpStatus.HttpS
+    // @Header('Cache-control', 'none')
     create(@Body() createProductDto: CreateProductDto): string {
         return `Title: ${createProductDto.title} Price: ${createProductDto.price}`
     }
